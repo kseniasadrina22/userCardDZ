@@ -1,42 +1,77 @@
+@import url(https://www.pexels.com/uk-ua/photo/91227/);
+
 * {
   box-sizing: border-box;
 }
 
 body {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 300%;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .userCard {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  flex: 1 1 auto;
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
   font-size: 15px;
+  align-items: center;
+  text-align: center;
 }
 
 .block1 {
-  align-content: center;
+  text-align: center;
 }
 
 .userPhoto {
   width: 150px;
   height: 150px;
+  margin-top: 20px;
   object-fit: cover;
   border-radius: 50%;
+  border: 5px solid white;
+}
+.star {
+  color: silver;
+  list-style-type: none;
+  margin-top: -12%;
+  border-radius: 10px;
   border: 2px solid white;
 }
 
+.userPhoto2 {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.star2 {
+  color: goldenrod;
+  list-style-type: none;
+  margin-top: -12%;
+  border-radius: 10px;
+  border: 2px solid white;
+}
 .userWork {
   text-align: center;
 }
 
 .userPayment {
-  text-align: center;
   color: silver;
 }
+
+.userName {
+  margin-top: 10px;
+}
+
 .block2 {
   background: #f1f1ef;
   text-align: center;
@@ -46,19 +81,30 @@ body {
 .userInfo {
   color: silver;
 }
-.btn1,
-.btn2 {
-  border: 1px solid #29a3ee;
-  padding: 3px;
-  border-radius: 5px;
-}
 
-.btn1 {
+.buttonViewCV {
   color: #29a3ee;
   background: white;
+  border: 2px solid #29a3ee;
+  border-radius: 8px;
+  padding: 10px 32% 10px;
+  margin: 10px auto 10px auto;
 }
 
-.btn2 {
+.buttonMakeOffer {
   color: white;
   background: #29a3ee;
+  border: 2px solid #29a3ee;
+  border-radius: 8px;
+  padding: 10px 75px 10px;
+}
+
+.Online {
+  color: darkgreen;
+  list-style-type: none;
+  margin: 10px auto 10px auto;
+}
+.time {
+  color: silver;
+  margin: 10px auto 10px auto;
 }
